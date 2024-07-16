@@ -31,6 +31,10 @@ patching_arguments:
   overlap: 0
   patch_level: 0
   custom_downsample: 1
+encoder_arguments:
+  # arguments for the pretrained encoder model
+  model_name: resnet50_trunc # currently support: resnet50_trunc, uni_v1, conch_v1
+  target_img_size: 224 # resize images to this size before feeding to encoder
 model_arguments: 
   # arguments for initializing model from checkpoint
   ckpt_path: /wz-pstor02/Shigb_CLAM_FGFR/clam_ostu_fgfr_beta/results/task_16_ori_tcga_soft_chinese_s728/s_4_checkpoint.pt
